@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Gerador de Mensagem de MR",
+  "homepage_url": "http://localhost:8080/",
+  "description": "A Vue Browser Extension",
+  "default_locale": "en",
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "icons/kayran.png",
+    "48": "icons/kayran.png",
+    "128": "icons/kayran.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Gerador de Mensagem de MR",
+    "default_icon": {
+      "19": "icons/kayran.png",
+      "38": "icons/kayran.png"
+    }
+  }
+}
